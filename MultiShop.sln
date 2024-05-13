@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C62031F7-4C68-4E4F-B6CF-75980BED2EB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{64AB0FD9-79B0-4113-9CA8-E14D9C57A3CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Catalog", "Services\Catalog\MultiShop.Catalog\MultiShop.Catalog.csproj", "{4043E396-90FF-4F4C-8116-9ABC1ABA7883}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{6BE51AAF-F87C-4FF5-AD2A-7B34174882D0}"
+	ProjectSection(SolutionItems) = preProject
+		Docker.txt = Docker.txt
+		Portainer_kurulumu.txt = Portainer_kurulumu.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{3DC2D250-EF4E-469B-9C3F-D19CB1239E25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Discount", "Services\Discount\MultiShop.Discount\MultiShop.Discount.csproj", "{AC7E9AC7-2B09-4C6E-8EB7-73A7A8E8B8DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{A5592BFE-7750-40FA-A889-FF826C9C083F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C84EB137-2853-45FC-8300-FE33E9415895}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3580C124-0ED0-429E-9224-262AED3B9A2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3D6EB586-9CA7-4D2F-BC6B-D1FCB2250A68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Order.Domain", "Services\Order\Core\MultiShop.Order.Domain\MultiShop.Order.Domain.csproj", "{56766267-98EC-4C6F-B92E-E505B80A914E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Order.Application", "Service\Order\Core\MultiShop.Order.Application\MultiShop.Order.Application.csproj", "{1E81A88D-A524-479C-B8B0-A8C397707C04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Order.Persistence", "Services\Order\Infrastructure\MultiShop.Order.Persistence\MultiShop.Order.Persistence.csproj", "{5C9F51C3-7281-4502-8467-572EB2343B32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Order.WebApi", "Services\Order\Presentation\MultiShop.Order.WebApi\MultiShop.Order.WebApi.csproj", "{AF423306-5349-484C-9563-FB44045D81B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4043E396-90FF-4F4C-8116-9ABC1ABA7883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4043E396-90FF-4F4C-8116-9ABC1ABA7883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4043E396-90FF-4F4C-8116-9ABC1ABA7883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4043E396-90FF-4F4C-8116-9ABC1ABA7883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC7E9AC7-2B09-4C6E-8EB7-73A7A8E8B8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7E9AC7-2B09-4C6E-8EB7-73A7A8E8B8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7E9AC7-2B09-4C6E-8EB7-73A7A8E8B8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7E9AC7-2B09-4C6E-8EB7-73A7A8E8B8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56766267-98EC-4C6F-B92E-E505B80A914E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56766267-98EC-4C6F-B92E-E505B80A914E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56766267-98EC-4C6F-B92E-E505B80A914E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56766267-98EC-4C6F-B92E-E505B80A914E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E81A88D-A524-479C-B8B0-A8C397707C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E81A88D-A524-479C-B8B0-A8C397707C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E81A88D-A524-479C-B8B0-A8C397707C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E81A88D-A524-479C-B8B0-A8C397707C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9F51C3-7281-4502-8467-572EB2343B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9F51C3-7281-4502-8467-572EB2343B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9F51C3-7281-4502-8467-572EB2343B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9F51C3-7281-4502-8467-572EB2343B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF423306-5349-484C-9563-FB44045D81B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF423306-5349-484C-9563-FB44045D81B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF423306-5349-484C-9563-FB44045D81B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF423306-5349-484C-9563-FB44045D81B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64AB0FD9-79B0-4113-9CA8-E14D9C57A3CA} = {C62031F7-4C68-4E4F-B6CF-75980BED2EB9}
+		{4043E396-90FF-4F4C-8116-9ABC1ABA7883} = {64AB0FD9-79B0-4113-9CA8-E14D9C57A3CA}
+		{3DC2D250-EF4E-469B-9C3F-D19CB1239E25} = {C62031F7-4C68-4E4F-B6CF-75980BED2EB9}
+		{AC7E9AC7-2B09-4C6E-8EB7-73A7A8E8B8DF} = {3DC2D250-EF4E-469B-9C3F-D19CB1239E25}
+		{A5592BFE-7750-40FA-A889-FF826C9C083F} = {C62031F7-4C68-4E4F-B6CF-75980BED2EB9}
+		{C84EB137-2853-45FC-8300-FE33E9415895} = {A5592BFE-7750-40FA-A889-FF826C9C083F}
+		{3580C124-0ED0-429E-9224-262AED3B9A2E} = {A5592BFE-7750-40FA-A889-FF826C9C083F}
+		{3D6EB586-9CA7-4D2F-BC6B-D1FCB2250A68} = {A5592BFE-7750-40FA-A889-FF826C9C083F}
+		{56766267-98EC-4C6F-B92E-E505B80A914E} = {C84EB137-2853-45FC-8300-FE33E9415895}
+		{1E81A88D-A524-479C-B8B0-A8C397707C04} = {C84EB137-2853-45FC-8300-FE33E9415895}
+		{5C9F51C3-7281-4502-8467-572EB2343B32} = {3580C124-0ED0-429E-9224-262AED3B9A2E}
+		{AF423306-5349-484C-9563-FB44045D81B8} = {3D6EB586-9CA7-4D2F-BC6B-D1FCB2250A68}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9318318-8F96-45F0-AFE1-13BC93395D94}
+	EndGlobalSection
+EndGlobal

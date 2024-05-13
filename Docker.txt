@@ -1,0 +1,11 @@
+# Öncelikle 'mongodb_data' adýnda bir Docker volume oluþturun
+docker volume create mongodb_data
+
+# Ardýndan bu volume'u kullanarak bir MongoDB konteyneri baþlatýn
+docker run --name mongodb -v mongodb_data:/data/db -d mongo:latest
+
+# Yukarýdaki komut açýklamasý:
+# --name mongodb : Konteynerin adý 'mongodb' olarak ayarlanýr.
+# -v mongodb_data:/data/db : 'mongodb_data' adlý Docker volume, konteyner içindeki '/data/db' yoluna baðlanýr.
+# -d : Konteyneri arka planda çalýþtýrýr.
+# mongo:latest : En son MongoDB Docker imajýný kullanýr.
