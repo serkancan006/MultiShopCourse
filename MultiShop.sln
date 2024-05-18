@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{6BE51AAF-F87C-4FF5-AD2A-7B34174882D0}"
 	ProjectSection(SolutionItems) = preProject
 		Docker.txt = Docker.txt
+		IdentityServer4.txt = IdentityServer4.txt
 		Portainer_kurulumu.txt = Portainer_kurulumu.txt
 	EndProjectSection
 EndProject
@@ -34,6 +35,16 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Order.Persistence", "Services\Order\Infrastructure\MultiShop.Order.Persistence\MultiShop.Order.Persistence.csproj", "{5C9F51C3-7281-4502-8467-572EB2343B32}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Order.WebApi", "Services\Order\Presentation\MultiShop.Order.WebApi\MultiShop.Order.WebApi.csproj", "{AF423306-5349-484C-9563-FB44045D81B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{5CC1239A-F377-40CF-A9DF-CDE323B78959}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.IdentityServer", "IdentityServer\MultiShop.IdentityServer\MultiShop.IdentityServer.csproj", "{A48FEEED-8E73-4487-A0CB-8BC39FE67D4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{F967FDAD-7262-4F3C-8DCF-FC59B724E5E0}"
+	ProjectSection(SolutionItems) = preProject
+		IdentitiyServerVersionErrorSolution.txt = IdentitiyServerVersionErrorSolution.txt
+		PortainerCmd.txt = PortainerCmd.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +76,10 @@ Global
 		{AF423306-5349-484C-9563-FB44045D81B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF423306-5349-484C-9563-FB44045D81B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF423306-5349-484C-9563-FB44045D81B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48FEEED-8E73-4487-A0CB-8BC39FE67D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48FEEED-8E73-4487-A0CB-8BC39FE67D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48FEEED-8E73-4487-A0CB-8BC39FE67D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48FEEED-8E73-4487-A0CB-8BC39FE67D4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +97,7 @@ Global
 		{1E81A88D-A524-479C-B8B0-A8C397707C04} = {C84EB137-2853-45FC-8300-FE33E9415895}
 		{5C9F51C3-7281-4502-8467-572EB2343B32} = {3580C124-0ED0-429E-9224-262AED3B9A2E}
 		{AF423306-5349-484C-9563-FB44045D81B8} = {3D6EB586-9CA7-4D2F-BC6B-D1FCB2250A68}
+		{A48FEEED-8E73-4487-A0CB-8BC39FE67D4E} = {5CC1239A-F377-40CF-A9DF-CDE323B78959}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A9318318-8F96-45F0-AFE1-13BC93395D94}

@@ -1,0 +1,3 @@
++ dotnet new -i identityserver4.templates
++ dotnet new is4aspid --name MultiShop.IdentityServer
+var olan projeyi içe aktar.
