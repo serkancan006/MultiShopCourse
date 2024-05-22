@@ -16,6 +16,7 @@ namespace MultiShop.IdentityServer
             new ApiResource("ResourceCatalog") { Scopes = {"CatalogFullPermission","CatalogReadPermission"} },
             new ApiResource("ResourceDiscount") { Scopes = {"DiscountFullPermission","DiscountReadPermission"} },
             new ApiResource("ResourceOrder") { Scopes = {"OrderFullPermission","OrderReadPermission"} },
+            new ApiResource(IdentityServerConstants.LocalApi.ScopeName),
         };
         // o token içinde hangi bilgilere erişim sağlanıcak
         public static IEnumerable<IdentityResource> IdentityResources => new IdentityResource[]
@@ -35,6 +36,8 @@ namespace MultiShop.IdentityServer
 
             new ApiScope("OrderFullPermission","Reading authority for order operations"),
             new ApiScope("OrderReadPermission","Reading authority for order operations"),
+
+            new ApiScope(IdentityServerConstants.LocalApi.ScopeName),
         };
 
         public static IEnumerable<Client> Clients => new Client[]
@@ -64,7 +67,11 @@ namespace MultiShop.IdentityServer
                 ClientName = "Multi Shop Admin User",
                 AllowedGrantTypes = GrantTypes.ClientCredentials, //kimlik işlemleri için kullanılan bir prop
                 ClientSecrets = { new Secret("multishopsecret".Sha256()) },
-                AllowedScopes = { "CatalogReadPermission", "CatalogFullPermission", "DiscountFullPermission", "OrderFullPermission", IdentityServerConstants.LocalApi.ScopeName, IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile },
+                AllowedScopes = { "CatalogReadPermission", "CatalogFullPermission", "DiscountFullPermission", "OrderFullPermission",
+                    IdentityServerConstants.LocalApi.ScopeName,
+                    IdentityServerConstants.StandardScopes.Email,
+                    IdentityServerConstants.StandardScopes.OpenId,
+                    IdentityServerConstants.StandardScopes.Profile },
                 AccessTokenLifetime = 600
             },
         };
