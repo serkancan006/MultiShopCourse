@@ -9,7 +9,6 @@ using static IdentityServer4.IdentityServerConstants;
 
 namespace MultiShop.IdentityServer.Controllers
 {
-    //bu kısmında altındaki metodlar IdnetitiyServer Access token a sahip olmak zorunda
     [Authorize(LocalApi.PolicyName)]
     [Route("api/[controller]")]
     [ApiController]
