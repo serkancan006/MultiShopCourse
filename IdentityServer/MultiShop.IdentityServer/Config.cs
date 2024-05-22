@@ -50,7 +50,7 @@ namespace MultiShop.IdentityServer
                 AllowedGrantTypes = GrantTypes.ClientCredentials, //kimlik işlemleri için kullanılan bir prop
                 ClientSecrets = { new Secret("multishopsecret".Sha256()) },
                 //AllowedScopes = { "CatalogReadPermission" },
-                AllowedScopes = { "DiscountReadPermission" },
+                AllowedScopes = { "DiscountFullPermission" },
             },
             //Manager
             new Client
