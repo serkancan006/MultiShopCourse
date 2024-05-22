@@ -44,6 +44,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 	ProjectSection(SolutionItems) = preProject
 		IdentitiyServerVersionErrorSolution.txt = IdentitiyServerVersionErrorSolution.txt
 		PortainerCmd.txt = PortainerCmd.txt
+		PortNumbers.txt = PortNumbers.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenshootlar_önemli", "screenshootlar_önemli", "{DF3224D4-FCC9-4182-A228-F77A1233EB7D}"
