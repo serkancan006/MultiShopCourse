@@ -1,5 +1,6 @@
-Identitiy -->  5001   mssql  localhost:1440
+Identitiy -->  5001   mssql  localhost:1441 -> sa 123456Aa* (hepsi ayný þifre)
 Catalog -->    7070   mongo  
 Discount -->   7071   mssql  localhost:1433
-Order -->      7072   mssql  localhost:1441
+Order -->      7072   mssql  localhost:1440
 Cargo -->      7073   mssql  localhost:1442 
+Basket -->     7074   Redis localhost:6379
